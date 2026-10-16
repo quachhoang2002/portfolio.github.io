@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hoang | Go Backend Engineer</title>
+<style>
+:root{--bg:#0b0f14;--card:#121821;--line:#1f2a37;--text:#e6edf3;--mute:#8b98a5;--acc:#00add8;--ok:#3fb950}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--text);font:16px/1.6 Inter,system-ui,sans-serif}
+a{color:var(--acc);text-decoration:none}.wrap{max-width:1000px;margin:auto;padding:0 24px}
+nav{position:sticky;top:0;background:#0b0f14cc;backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:9}
+nav .wrap{display:flex;justify-content:space-between;padding:16px 24px}nav b{font-family:monospace;color:var(--acc)}nav a{color:var(--mute);margin-left:20px}
+.hero{padding:80px 0 40px;display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
+h1{font-size:44px;line-height:1.15}h1 span{color:var(--acc)}.sub{color:var(--mute);margin:16px 0 24px}
+.btn{display:inline-block;padding:10px 18px;border-radius:8px;background:var(--acc);color:#000;font-weight:600;margin-right:10px}.btn.o{background:none;border:1px solid var(--line);color:var(--text)}
+.term{background:#05080c;border:1px solid var(--line);border-radius:10px;font:14px/1.7 monospace;overflow:hidden}
+.term .bar{padding:8px 12px;background:var(--card);color:var(--mute)}.term .bar i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;background:#f85149}
+.term pre{padding:16px}.g{color:var(--ok)}.c{color:var(--acc)}.m{color:var(--mute)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:20px 0 60px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px;text-align:center}.stat b{font-size:32px;color:var(--acc);display:block}.stat small{color:var(--mute)}
+h2{font-size:28px;margin-bottom:24px}h2::before{content:"// ";color:var(--acc);font-family:monospace}section{margin-bottom:72px}
+.tl{border-left:2px solid var(--line);padding-left:28px}.job{position:relative;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;margin-bottom:20px;transition:.2s}
+.job:hover{border-color:var(--acc);transform:translateX(4px)}.job::before{content:"";position:absolute;left:-37px;top:24px;width:14px;height:14px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 4px var(--bg)}
+.job h3{display:flex;justify-content:space-between;flex-wrap:wrap}.job h3 small{color:var(--mute);font-weight:400}.job ul{margin:10px 0 10px 18px;color:#c9d1d9}
+.tags span{display:inline-block;font:12px monospace;padding:3px 8px;border:1px solid var(--line);border-radius:20px;margin:4px 4px 0 0;color:var(--acc)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.case{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
+.case .d{font:12px monospace;color:var(--mute);background:#05080c;padding:10px;border-radius:6px;margin:12px 0}
+.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.skills div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}.skills h4{color:var(--acc);margin-bottom:8px;font-family:monospace}
+footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:var(--mute)}
+@media(max-width:800px){.hero,.grid,.skills,.stats{grid-template-columns:1fr}h1{font-size:34px}}
+</style></head><body>
+<nav><div class="wrap"><b>hoang.dev</b><div><a href="#exp">Experience</a><a href="#cases">Case Studies</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div></div></nav>
+<div class="wrap">
+<div class="hero"><div><p class="m" style="font-family:monospace">Hello, I'm Hoang 👋</p><h1>Go Backend Engineer building <span>high-throughput</span> distributed systems.</h1>
+<p class="sub">4+ years shipping ride-hailing, real-time chat and SaaS backends with Go, PostgreSQL, Kafka, Redis and gRPC. Now focused on fintech and banking.</p>
+<a class="btn" href="#cases">View my work</a><a class="btn o" href="Hoang-Quach-CV.pdf" download>Download CV</a></div>
+<div class="term"><div class="bar"><i></i><i style="background:#d29922"></i><i style="background:#3fb950"></i> ~/hoang</div><pre><span class="g">$</span> go run hoang.go
+<span class="m">// loading profile...</span>
+<span class="c">role</span>     : "Backend Engineer @ Green SM"
+<span class="c">peak</span>     : 14K+ RPS order service
+<span class="c">realtime</span> : 30K+ WebSocket conns
+<span class="c">search</span>   : &gt;1s → &lt;150ms
+<span class="c">stack</span>    : [Go, Kafka, Postgres, Redis]
+<span class="g">✔ ready to build reliable systems</span></pre></div></div>
+<div class="stats"><div class="stat"><b>14K+</b><small>RPS order service</small></div><div class="stat"><b>30K+</b><small>concurrent WebSockets</small></div><div class="stat"><b>&lt;150ms</b><small>search latency (from &gt;1s)</small></div></div>
+<section id="exp"><h2>Experience</h2><div class="tl">
+<div class="job"><h3>Backend Engineer · Green SM <small>01/2026 – Present</small></h3><ul><li>Built a ride-hailing order service handling 14K+ RPS.</li><li>Used Sagas for distributed transactions with compensation.</li><li>Built a Kafka → Apache Doris analytics pipeline.</li></ul><div class="tags"><span>Go</span><span>Kafka</span><span>Saga</span><span>Doris</span><span>gRPC</span></div></div>
+<div class="job"><h3>Backend Engineer · STACK Tech <small>08/2024 – 01/2026</small></h3><ul><li>Built a Centrifugo chat system serving 30K+ WebSocket connections.</li><li>Cut Elasticsearch latency from over 1s to under 150ms.</li></ul><div class="tags"><span>Go</span><span>Centrifugo</span><span>Elasticsearch</span><span>Redis</span></div></div>
+<div class="job"><h3>Backend Engineer · Tanca HRM SaaS <small>07/2022 – 07/2024</small></h3><ul><li>Migrated core services from PHP to Go.</li><li>Added RabbitMQ dead-letter queues for reliable processing.</li><li>Deployed services on Kubernetes.</li></ul><div class="tags"><span>Go</span><span>PHP</span><span>RabbitMQ</span><span>K8s</span></div></div>
+<div class="job"><h3>Freelance <small>Side projects</small></h3><ul><li>Built a marketplace with crypto and bank payment integration.</li><li>Built a task backend for YouTube automation.</li></ul><div class="tags"><span>Payments</span><span>Go</span><span>PostgreSQL</span></div></div>
+</div></section>
+<section id="cases"><h2>Case Studies</h2><div class="grid">
+<div class="case"><h3>Scaling orders to 14K RPS</h3><div class="d">client → gRPC → order-svc → Redis lock<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↳ Kafka → workers → PG</div><p class="m">Partitioning, idempotency keys and backpressure.</p></div>
+<div class="case"><h3>Saga compensation</h3><div class="d">book → pay → assign<br>&nbsp;&nbsp;✖ fail → refund ← cancel</div><p class="m">Consistent bookings across services without 2PC.</p></div>
+<div class="case"><h3>Search: 1s → 150ms</h3><div class="d">query → ES (tuned mapping)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↳ Redis cache hit</div><p class="m">Mapping redesign, query tuning and caching.</p></div>
+</div></section>
+<section id="skills"><h2>Skills</h2><div class="skills">
+<div><h4>language</h4>Go, PHP, SQL</div><div><h4>data</h4>PostgreSQL, Redis, Elasticsearch, Doris</div><div><h4>messaging</h4>Kafka, RabbitMQ, gRPC, WebSocket</div><div><h4>infra</h4>AWS, Kubernetes, Docker</div>
+</div></section>
+</div>
+<footer id="contact"><p>Let's build something reliable together.</p><p style="margin-top:8px"><a href="https://github.com/quachhoang2002" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/hoang-quach-737b6925a/" target="_blank" rel="noopener">LinkedIn</a> · <a href="mailto:quachhoang2002@gmail.com">Email</a></p></footer>
+</body></html>
